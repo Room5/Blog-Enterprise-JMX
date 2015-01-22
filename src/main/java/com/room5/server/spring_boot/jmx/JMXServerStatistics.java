@@ -65,6 +65,14 @@ public class JMXServerStatistics
 
     @PostConstruct
     private void init() {
+	//sanity check properties
+	if (statCount < 1) {
+	    throw new IllegalArgumentException("The property specifying the number of rolling metrics (statistics.interval.count) must be greater than zero; value supplied: " + statCount);
+	}
+	if (statIntervalDuration < 1) {
+	    throw new IllegalArgumentException("The property specifying the rolling metrics interval duration (statistics.interval.duration.minutes) must be greater than zero; value supplied: " + statIntervalDuration);
+	}
+	
 	//initialize stats rolling queue
 	rollingStats = new CircularFifoQueue<RollingStatistics>(statCount);
 	

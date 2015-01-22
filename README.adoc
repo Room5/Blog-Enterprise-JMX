@@ -2,11 +2,19 @@
 
 == Synopsis
 
-In the Internet of Things (IoT), effective servers in the Cloud become even more crucial as they deal with the exponential growth of the number clients they must serve.  The Gartner Group projects 26 billion units installed by 2020, which represents a 30-fold increase from 20091.  Of this, 26 billion units will be devices other than smartphones, tablets or PC’s.  To service all these devices, cloud components will have to grow, as well.  Yet simply “spinning up” ad-hoc server instances is neither efficient nor cost-effective.  Virtual server farms provide the raw power, but in a highly connected world, often more means less, as each new component puts increased load on the upstream services they need to consume.
+In the Internet of Things (IoT), effective servers in the Cloud become even more crucial as they deal with the exponential growth of 
+the number clients they must serve.  The Gartner Group projects 26 billion units installed by 2020, which represents a 30-fold 
+increase from 20091.  Of this, 26 billion units will be devices other than smartphones, tablets or PC’s.  To service all these 
+devices, cloud components will have to grow, as well.  Yet simply “spinning up” ad-hoc server instances is neither efficient nor 
+cost-effective.  Virtual server farms provide the raw power, but in a highly connected world, often *more means less*, as each new 
+component puts increased load on the upstream services they consume.
 
-Before spinning up another server, wouldn’t it be better to monitor the existing ones to determine the cause these high loads?  Could services that allow you to see inside your processes and identify bottlenecks before they happen provide a pro-active approach which will reduce the burden and cost of unnecessary server duplication?
+Before spinning up another server, wouldn’t it be better to monitor the existing ones to determine the cause of these high loads?  Could
+ services that allow you to see *inside* your processes and identify bottlenecks *before* they happen provide a pro-active approach 
+ which will reduce the burden and cost of unnecessary server duplication?
 
-Java Management Extensions (JMX) may provide just such a solution.  In this article, we’ll delve into building and consuming such services and show how it can help you in building a true Enterprise-quality IoT solution.
+Java Management Extensions (JMX) may provide just such a solution.  In this article, we’ll delve into building and consuming such 
+services and show how it can help you in building a true Enterprise-quality IoT solution.
 
 
 == Installation and Getting Started
@@ -15,7 +23,6 @@ This repository is a complete Eclipse application that can be built using Maven 
 [source,java,indent=0]
 ----
 	maven package
-	
 ----
 
 == Getting help

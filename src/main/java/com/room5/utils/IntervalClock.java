@@ -4,6 +4,9 @@ public class IntervalClock {
     private int intervalPeriod;
     
     public IntervalClock(int intervalPeriodSeconds) {
+	if (intervalPeriodSeconds < 1) {
+	    throw new IllegalArgumentException("Interval duration must be greater than zero; value supplied: " + intervalPeriodSeconds);
+	}
 	intervalPeriod = intervalPeriodSeconds;
     }
     
